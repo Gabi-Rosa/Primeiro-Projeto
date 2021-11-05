@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --color1: hsl(225, 100%, 94%);
+    --color2: hsl(225, 100%, 98%);
+    --color5: hsl(223, 47%, 23%);
+    --color4: hsl(224, 23%, 55%);
+    --color3: hsl(245, 75%, 52%);
+
+    --font-site: 'Red Hat Display', sans-serif;;
+}
+
+body{
+    background-color: 
+    var(--color1);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    font-size: 1em;
+    font-family: var(--font-site);
+}
+
+#main{
+  height: 550px;
+  width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.363);
+}
+
+.img1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 30%;
+    width: 100%;
+}
+
+h2{
+    font-weight: 900;
+    color: var(--color5);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paragrafo {
+    color: var(--color4);
+    text-align: center;
+    margin: 10px 25px; 
+    font-size: 500;
+    line-height: 1.5em;
+}
+
+.Payment{
+    display: block;
+    background-color: var(--color2);
+    height: 80px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+#img2{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.p1{
+    padding-left: 80px;
+    margin-top: -50px;
+    color: var(--color5);
+    font-weight: 900;
+}
+
+.p2{
+    padding-left: 80px;
+    color: var(--color4);
+}
+
+a{
+    cursor:pointer;
+}
+.Payment a{  display: block;
+    margin-top: -30px;
+    padding-left: 250px;
+    font-weight: 700;
+    color: var(--color3);
+}
+
+.Payment a:hover {
+    opacity: 0.7;
+}
+
+button {
+    display: block;
+    margin: 30px auto 0px;
+    padding: 15px;
+    width: 350px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+#btt1{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btt1 a{
+    color: var(--color1);
+    text-decoration: none;
+}
+
+#btt1:hover{
+    opacity: 0.7;
+}
+
+#btt2 {
+    background-color: white;
+    margin: 10px auto;
+} 
+
+#btt2 a{
+   background-color: white;
+   color: var(--color4);
+   text-decoration: none;
+}
+
+
+#btt2 a:hover{
+    color: var(--color5);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    #main{
+        height: 550px;
+        width: 320px;
+    }
+    .img1{
+        height: 150px;
+    }
+    
+    .Payment{
+        width: 280px;
+    }
+
+    .Payment a{  display: block;
+        padding-left: 200px;
+    }
+    
+     button {
+     font-weight: 900;
+     width: 280px;
+    }
+}
